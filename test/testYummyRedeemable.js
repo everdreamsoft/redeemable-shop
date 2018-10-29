@@ -765,9 +765,6 @@ contract('Redeemable Shop (Buy Function multiple species)', async accounts => {
             selectedBuyerInfo.etherSpendInYummies = selectedBuyerInfo.etherSpendInYummies.add(theoricalYummyPrice);
         }
 
-        // TODO:
-        // Number of yummies should be correct for each user and each specie
-
         let expectedCFOBalance = web3.toBigNumber(initialCFOBalance);
 
         for(let buyerId = 0; buyerId < buyers.length; ++buyerId){
